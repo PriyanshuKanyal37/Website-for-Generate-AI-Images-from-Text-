@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 800px; /* Increased max-width for larger content */
+    text-align: center;
+}
+
+.headings-container h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffcd3c;
+}
+
+.headings-container .heading {
+    margin: 0;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.headings-container .sub-heading {
+    margin: 20px 0;
+    font-size: 1em;
+    color: #dddddd;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-controls {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #ffcd3c;
+}
+
+.image-generate-btn {
+    background-color: #ffcd3c;
+    color: #2b5876;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.image-generate-btn:hover {
+    background-color: #ffd700;
+}
+
+.image-container {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.image-container p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ffcd3c;
+}
+
+.my-generated-image {
+    width: 100%;
+    height: auto;
+    max-height: none; /* Remove max-height constraint */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .my-generated-image {
+        max-height: 300px; /* Adjust height for smaller screens */
+    }
+}
